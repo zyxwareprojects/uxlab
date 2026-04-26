@@ -88,14 +88,19 @@ export const InternalExperience = ({ onBack, initialStep, initialRole, initialPo
 
     return (
         <div className="min-h-screen bg-background text-foreground relative">
-            {/* Brand logo — fixed top-left across every internal step */}
-            <div className="fixed top-0 left-0 px-6 py-5 z-50 pointer-events-none">
-                <img
-                    src={logoSrc}
-                    alt="Zyxware Technologies"
-                    className="h-8 md:h-9 w-auto select-none"
-                    draggable={false}
-                />
+            {/* Brand logo — fixed top-left across every internal step.
+                Sizing + structure deliberately match IntroScreen.tsx so the
+                Zyxware mark + wordmark looks identical across all three
+                surfaces (main / client / internal). */}
+            <div className="fixed top-0 left-0 px-6 py-5 z-50 select-none">
+                <div className="flex items-center select-none">
+                    <img
+                        src={logoSrc}
+                        alt="Zyxware Technologies"
+                        className="h-9 md:h-10 w-auto"
+                        draggable={false}
+                    />
+                </div>
             </div>
 
             {/* Overlapping back button removed. Handled by DesignationPortal. */}
