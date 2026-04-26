@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { useTheme } from "@/state/ThemeContext";
+import { ZyxwareLogo } from "@/components/brand/ZyxwareLogo";
 import { DesignationSelect, Designation } from "./DesignationSelect";
 import { DesignationPortal } from "./DesignationPortal";
 import { InternalIntroScreen } from "./InternalIntroScreen";
@@ -42,8 +42,6 @@ interface InternalExperienceProps {
 export const InternalExperience = ({ onBack, initialStep, initialRole, initialPortalMode }: InternalExperienceProps) => {
     const [step, setStep] = useState<InternalStep>(initialStep || "intro");
     const [role, setRole] = useState<Designation | null>(initialRole ?? null);
-    const { theme } = useTheme();
-    const logoSrc = theme === "light" ? "/brand/zyxware-logo-light.png" : "/brand/zyxware-logo-dark.png";
 
     // Sync with external navigation (like debug menu)
     useEffect(() => {
@@ -89,18 +87,10 @@ export const InternalExperience = ({ onBack, initialStep, initialRole, initialPo
     return (
         <div className="min-h-screen bg-background text-foreground relative">
             {/* Brand logo — fixed top-left across every internal step.
-                Sizing + structure deliberately match IntroScreen.tsx so the
-                Zyxware mark + wordmark looks identical across all three
-                surfaces (main / client / internal). */}
+                Renders the shared ZyxwareLogo so the signature is identical
+                on every surface (main / client / internal) and theme-aware. */}
             <div className="fixed top-0 left-0 px-6 py-5 z-50 select-none">
-                <div className="flex items-center select-none">
-                    <img
-                        src={logoSrc}
-                        alt="Zyxware Technologies"
-                        className="h-9 md:h-10 w-auto"
-                        draggable={false}
-                    />
-                </div>
+                <ZyxwareLogo />
             </div>
 
             {/* Overlapping back button removed. Handled by DesignationPortal. */}
