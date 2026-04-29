@@ -156,7 +156,8 @@ export const ClientAnalysisScreen = ({ metrics, onContinue }: ClientAnalysisScre
                         ${lostRevenue.toLocaleString(undefined, { maximumFractionDigits: 0 })}
                     </div>
                     <p className="text-gray-500 text-xs">
-                        Based on {(dropOffRate * 100).toFixed(0)}% friction drop-off
+                        Based on {(dropOffRate * 100).toFixed(0)}% friction drop-off<br/>
+                        <span className="italic opacity-70">*(Values are based on assumed data for demonstration)</span>
                     </p>
                 </div>
 

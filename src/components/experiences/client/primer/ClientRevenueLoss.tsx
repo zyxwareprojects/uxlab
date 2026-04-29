@@ -56,7 +56,8 @@ export const ClientRevenueLoss = ({ onNext }: ClientRevenueLossProps) => {
                     <span className="font-bold text-destructive">${totalLost.toLocaleString()}</span> / month.
                 </h1>
                 <p className="text-muted-foreground">
-                    Based on typical drop-off rates for the UX errors we just saw.
+                    Based on typical drop-off rates for the UX errors we just saw. <br />
+                    <span className="text-xs italic opacity-70">(*Values are based on assumed data for demonstration)</span>
                 </p>
             </motion.div>
 

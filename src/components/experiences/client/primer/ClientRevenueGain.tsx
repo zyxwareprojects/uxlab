@@ -56,7 +56,8 @@ export const ClientRevenueGain = ({ onNext }: ClientRevenueGainProps) => {
                     <span className="font-bold text-primary text-6xl md:text-8xl">+${recoveredRevenue.toLocaleString()}</span> <span className="text-2xl text-muted-foreground">/ mo</span>
                 </h1>
                 <p className="text-muted-foreground max-w-2xl mx-auto">
-                    This is not magic. This is simply <span className="text-foreground font-bold">Removing Friction</span>.
+                    This is not magic. This is simply <span className="text-foreground font-bold">Removing Friction</span>.<br />
+                    <span className="text-xs italic opacity-70">(*Values are based on assumed data for demonstration)</span>
                 </p>
             </motion.div>
 
