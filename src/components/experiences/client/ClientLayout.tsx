@@ -22,13 +22,17 @@ export const ClientLayout = ({ children, step, totalSteps, title }: ClientLayout
         <div className="min-h-screen bg-background text-foreground selection:bg-primary/30">
             {/* Header: logo · progress · hamburger menu */}
             <header
-                className={`fixed top-0 left-0 right-0 z-50 px-6 py-4 flex justify-between items-center backdrop-blur-md border-b ${
+                className={`fixed top-0 left-0 right-0 z-50 px-6 py-4 flex items-center backdrop-blur-md border-b ${
                     isLight ? "bg-background/80 border-border" : "bg-void/80 border-white/5"
                 }`}
             >
-                <ZyxwareLogo className="h-9 md:h-10 w-auto" />
+                {/* Left side */}
+                <div className="flex-1 flex justify-start">
+                    <ZyxwareLogo className="h-9 md:h-10 w-auto" />
+                </div>
 
-                <div className="flex gap-1">
+                {/* Center */}
+                <div className="flex gap-1 justify-center shrink-0">
                     {Array.from({ length: totalSteps }).map((_, i) => (
                         <div
                             key={i}
@@ -41,8 +45,11 @@ export const ClientLayout = ({ children, step, totalSteps, title }: ClientLayout
                     ))}
                 </div>
 
-                {/* Spacer to balance the logo on the left — actual menu lives in ClientDebugMenu (rendered by ClientExperience) */}
-                <div className="w-[36px]" />
+                {/* Right side spacer to match width so center stays centered */}
+                <div className="flex-1 flex justify-end">
+                    {/* Spacer to balance the logo on the left — actual menu lives in ClientDebugMenu */}
+                    <div className="w-[36px]" />
+                </div>
             </header>
 
             <main className="pt-24 pb-12 px-4 max-w-7xl mx-auto min-h-screen flex flex-col">
