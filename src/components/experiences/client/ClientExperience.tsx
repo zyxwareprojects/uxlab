@@ -71,14 +71,14 @@ export const ClientExperience = () => {
                         title="The Principle: Signifiers"
                         description={
                             <>
-                                A "Signifier" tells the user <span className="text-white font-medium">what to do without reading</span>.
+                                A "Signifier" tells the user <span className="text-primary font-semibold">what to do without reading</span>.
                                 <br /><br />
                                 <span className="block text-xl">
-                                    • A flat plate says <strong className="text-indigo-300">"Push"</strong>.<br />
-                                    • A handle says <strong className="text-indigo-300">"Pull"</strong>.
+                                    • A flat plate says <strong className="text-accent">"Push"</strong>.<br />
+                                    • A handle says <strong className="text-accent">"Pull"</strong>.
                                 </span>
                                 <br />
-                                When you ignore this, you create <strong className="text-white">Cognitive Debt</strong>.
+                                When you ignore this, you create <strong className="text-primary">Cognitive Debt</strong>.
                             </>
                         }
                         impactIcon="📉"
@@ -87,7 +87,7 @@ export const ClientExperience = () => {
                             <>
                                 When a button <em>doesn't look clickable</em>, or a link looks like text, users pause.
                                 <br />
-                                <span className="text-pink-400 font-bold block mt-2">That pause costs you the customer.</span>
+                                <span className="text-accent font-bold block mt-2">That pause costs you the customer.</span>
                             </>
                         }
                         onNext={() => setStep("primer_stove")}
@@ -98,10 +98,10 @@ export const ClientExperience = () => {
                         title="The Principle: Natural Mapping"
                         description={
                             <>
-                                Controls should <span className="text-white font-medium">mimic the layout</span> of the thing they control.
+                                Controls should <span className="text-primary font-semibold">mimic the layout</span> of the thing they control.
                                 <br /><br />
                                 A <strong>Grid Stove</strong> needs <strong>Grid Knobs</strong>.<br />
-                                Using a linear row of knobs for a grid of burners forces the user to <em className="text-indigo-300">memorize</em>.
+                                Using a linear row of knobs for a grid of burners forces the user to <em className="text-accent font-semibold">memorize</em>.
                             </>
                         }
                         impactIcon="🧠"
@@ -109,7 +109,7 @@ export const ClientExperience = () => {
                         impactDescription={
                             <>
                                 If your dashboard buttons are far from the item they control, or filter logic is backward, users make mistakes.
-                                <span className="text-pink-400 font-bold block mt-2">Mistakes = Support Tickets.</span>
+                                <span className="text-accent font-bold block mt-2">Mistakes = Support Tickets.</span>
                             </>
                         }
                         onNext={() => setStep("primer_ketchup")}
@@ -132,7 +132,7 @@ export const ClientExperience = () => {
                         impactDescription={
                             <>
                                 Every extra click, slow load, or complex form field is a "shake of the bottle".
-                                <span className="text-pink-400 font-bold block mt-2">Users get tired. Then they leave.</span>
+                                <span className="text-accent font-bold block mt-2">Users get tired. Then they leave.</span>
                             </>
                         }
                         onNext={() => setStep("primer_recap")}
@@ -150,7 +150,7 @@ export const ClientExperience = () => {
                         title="AD WASTE"
                         description={
                             <>
-                                <span className="text-white font-bold">You try to trick the user</span> with a promise you don't keep.
+                                <span className="text-primary font-bold">You try to trick the user</span> with a promise you don't keep.
                                 <br /><br />
                                 Marketing promised "50% Off". The Landing Page showed "Sign Up".
                                 <br />
@@ -162,7 +162,7 @@ export const ClientExperience = () => {
                         impactDescription={
                             <>
                                 You paid for the click. <br />
-                                <span className="text-pink-400 font-bold">You lost the customer in 3 seconds.</span>
+                                <span className="text-accent font-bold">You lost the customer in 3 seconds.</span>
                             </>
                         }
                         onNext={() => setStep("funnel_chaos")}
@@ -173,7 +173,7 @@ export const ClientExperience = () => {
                         title="THE VANITY TRAP"
                         description={
                             <>
-                                <span className="text-white">High-Intent Traffic</span> is successfully driven to the landing page.
+                                <span className="text-primary font-semibold">High-Intent Traffic</span> is successfully driven to the landing page.
                                 <br /><br />
                                 However, <strong>Poor Information Architecture</strong> and <strong>Intrusive Interstitials</strong> (Chatbots/Popups) cause immediate abandonment.
                             </>
@@ -184,7 +184,7 @@ export const ClientExperience = () => {
                             <>
                                 <strong>Acquisition</strong> measures volume. <strong>Conversion</strong> measures value.
                                 <br />
-                                <span className="text-pink-400 font-bold">The signups are paid for, but the value is not captured.</span>
+                                <span className="text-accent font-bold">The signups are paid for, but the value is not captured.</span>
                             </>
                         }
                         onNext={() => setStep("funnel_wall")}
@@ -199,14 +199,14 @@ export const ClientExperience = () => {
                                 <br /><br />
                                 That "Sign up for 10% off" popup in the first 5 seconds?
                                 <br />
-                                It's not "Conversion Optimization". <span className="text-white font-bold">It's an insult.</span>
+                                It's not "Conversion Optimization". <span className="text-primary font-bold">It's an insult.</span>
                             </>
                         }
                         impactIcon="🛑"
                         impactTitle="Negative Sentiment"
                         impactDescription={
                             <>
-                                Aggressive growth hacks lead to <span className="text-pink-400 font-bold">aggressive exits.</span>
+                                Aggressive growth hacks lead to <span className="text-accent font-bold">aggressive exits.</span>
                             </>
                         }
                         onNext={() => setStep("funnel_maze")}
@@ -217,7 +217,7 @@ export const ClientExperience = () => {
                         title="THE LABYRINTH"
                         description={
                             <>
-                                <span className="text-white">They can't find it.</span> So they don't use it.
+                                <span className="text-primary font-semibold">They can't find it.</span> So they don't use it.
                                 <br /><br />
                                 • Buried Guidelines<br />
                                 • Zero Search Functionality<br />
@@ -228,14 +228,14 @@ export const ClientExperience = () => {
                         impactTitle="Operational Risk"
                         impactDescription={
                             <>
-                                When policies are hard to find, employees <span className="text-white">make things up</span> to get the job done.
-                                <span className="text-pink-400 font-bold block mt-2">Compliance = 0%</span>
+                                When policies are hard to find, employees <span className="text-primary font-semibold">make things up</span> to get the job done.
+                                <span className="text-accent font-bold block mt-2">Compliance = 0%</span>
                             </>
                         }
                         mechanismTitle="The Mechanism (Search Cost)"
                         mechanismDescription={
                             <>
-                                Users follow the <span className="text-white">Path of Least Resistance</span>.
+                                Users follow the <span className="text-primary font-semibold">Path of Least Resistance</span>.
                                 If the "Right Way" takes 10 clicks, they will intuitively choose the "Fast Way" (guessing).
                             </>
                         }
@@ -259,13 +259,13 @@ export const ClientExperience = () => {
                         impactDescription={
                             <>
                                 You didn't get a "Lead". <br />
-                                <span className="text-pink-400 font-bold">You annoyed a qualified buyer who went to Zillow.</span>
+                                <span className="text-accent font-bold">You annoyed a qualified buyer who went to Zillow.</span>
                             </>
                         }
                         mechanismTitle="The Mechanism (The Ultimatum)"
                         mechanismDescription={
                             <>
-                                <span className="text-white">Reciprocity Failure</span>.
+                                <span className="text-primary font-semibold">Reciprocity Failure</span>.
                                 You asked for a massive deposit (Privacy) before showing the product.
                                 In human terms: "Marry me, then we can have coffee."
                             </>

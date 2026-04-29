@@ -247,7 +247,7 @@ export const DoorExperience = ({ onComplete }: DoorExperienceProps) => {
               transition={{ delay: 1.4 }}
               className="pt-6 border-t border-border"
             >
-              <p className="text-foreground/60 text-sm mb-6">
+              <p className="text-muted-foreground text-sm mb-6">
                 This happens more than you notice.
               </p>
               <button

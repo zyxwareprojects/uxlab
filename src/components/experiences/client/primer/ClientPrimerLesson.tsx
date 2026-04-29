@@ -48,7 +48,7 @@ export const ClientPrimerLesson = ({
                     <div className="absolute top-0 right-0 p-24 bg-primary/5 blur-[60px] rounded-full pointer-events-none"></div>
 
                     <div className="relative z-10 space-y-3">
-                        <div className="text-[10px] font-bold text-primary uppercase tracking-widest font-mono">
+                        <div className="text-xs font-bold text-primary uppercase tracking-widest font-mono">
                             The Scenario
                         </div>
                         <div className="text-lg md:text-xl text-foreground font-light leading-relaxed">
@@ -61,7 +61,7 @@ export const ClientPrimerLesson = ({
                 <div className="bg-gradient-to-br from-primary/10 to-primary/5 rounded-3xl p-6 border border-border flex flex-col justify-center relative overflow-hidden group transition-all duration-500 hover:border-primary/50 hover:from-primary/20 hover:to-primary/10">
 
                     <div className="relative z-10 space-y-2">
-                        <div className="text-[10px] font-bold text-muted-foreground uppercase tracking-widest font-mono group-hover:text-primary transition-colors">
+                        <div className="text-xs font-bold text-foreground/70 uppercase tracking-widest font-mono group-hover:text-primary transition-colors">
                             {mechanismTitle}
                         </div>
                         <div className="text-base text-muted-foreground leading-relaxed group-hover:text-foreground transition-colors">
@@ -74,7 +74,7 @@ export const ClientPrimerLesson = ({
                 <div className="bg-gradient-to-br from-destructive/10 to-accent/10 rounded-3xl p-6 border border-border flex flex-col justify-center relative overflow-hidden group transition-all duration-500 hover:border-destructive/50 hover:from-destructive/20 hover:to-accent/20">
 
                     <div className="relative z-10 space-y-2">
-                        <div className="text-[10px] font-bold text-accent uppercase tracking-widest font-mono group-hover:text-accent transition-colors">
+                        <div className="text-xs font-bold text-accent uppercase tracking-widest font-mono group-hover:text-accent transition-colors">
                             The Cost (Business)
                         </div>
                         <div className="text-base text-foreground leading-relaxed font-bold group-hover:text-foreground transition-colors">

@@ -266,11 +266,11 @@ export const ClientFunnelChaos = ({ onComplete }: ClientFunnelChaosProps) => {
                         </p>
                         <div className="grid grid-cols-2 gap-4 text-left bg-muted p-4 rounded-xl">
                             <div>
-                                <div className="text-xs opacity-50 uppercase tracking-widest">Acquisition</div>
+                                <div className="text-xs text-muted-foreground uppercase tracking-widest">Acquisition</div>
                                 <div className="text-xl font-mono text-primary">14.2k <span className="text-[10px] text-muted-foreground">Hits</span></div>
                             </div>
                             <div>
-                                <div className="text-xs opacity-50 uppercase tracking-widest">Conversion</div>
+                                <div className="text-xs text-muted-foreground uppercase tracking-widest">Conversion</div>
                                 <div className="text-xl font-mono text-red-500">0.3% <span className="text-[10px] text-muted-foreground">Sales</span></div>
                             </div>
                         </div>

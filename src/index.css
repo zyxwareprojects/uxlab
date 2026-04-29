@@ -207,6 +207,13 @@
   font-family: 'Raleway', 'Inter', sans-serif;
 }
 
+/* Re-apply grain on any element using bg-background so layout wrappers don't cover it */
+:root[data-theme="light"] .bg-background {
+  background-color: hsl(var(--background));
+  background-image: radial-gradient(circle, rgba(60, 30, 90, 0.10) 0.8px, transparent 0.8px);
+  background-size: 12px 12px;
+}
+
 /* Card surfaces always sit on solid white in light mode (no grain bleed-through) */
 :root[data-theme="light"] .bg-card,
 :root[data-theme="light"] .bg-popover {
